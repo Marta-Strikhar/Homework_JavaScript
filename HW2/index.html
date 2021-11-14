@@ -89,15 +89,26 @@
 
     let year = +prompt('Введіть рік');
     if (year % 4 ===0) {
-        document.write('<h2>Високосний рік</h2>')
+        document.write('<h2>Високосний рік</h2>');
+    } else if (year % 100===0) {
+        document.write('<h2>Не високосний рік</h2>')
+    } else if (year % 4 !==0) {
+        document.write('<h2>Не високосний рік</h2>')
     }
-    // else (year % 4 !=0)
-    // {
-    //     document.write('<h2>Не високосний рік</h2>')
-    // }
+
+
 
     //     - Використовуючи конструкцію if..else, напишіть код, який запитуватиме: „Яка «офіційна» назва JavaScript?“
     // Якщо користувач вводить «ECMAScript», то показати: «Правильно!», інакше – відобразити: «Не знаєте? ECMAScript!
+
+    let mmm = prompt('Яка «офіційна» назва JavaScript?');
+    if (mmm === 'ECMAScript') {
+        document.write('<h2>Правильно!</h2>')
+    } else if (mmm !== 'ECMAScript') {
+        document.write('<h2>Не знаєте? ECMAScript!</h2>')
+    }
+
+
 </script>
 </body>
 </html>
