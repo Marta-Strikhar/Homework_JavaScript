@@ -4,7 +4,7 @@
 let square = (a, b) => {
     return a * b;
 }
-console.log( square(5,10))
+console.log( square(5,10));
 
 
 // - створити функцію яка обчислює та повертає площу кола
@@ -12,7 +12,7 @@ console.log( square(5,10))
 let  radius = (r) => {
     return Math.PI * Math.pow(r, 2);
 }
-console.log(radius(2))
+console.log(radius(2));
 
 
 // - створити функцію яка обчислює та повертає площу циліндру
@@ -20,11 +20,11 @@ console.log(radius(2))
 let cylinder = (h, r) => {
    return 2 * Math.PI * r * h;
 }
-console.log(cylinder(15, 7))
+console.log(cylinder(15, 7));
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
 
-let array = ['black', 'red', 'white']
+let array = ['black', 'red', 'white'];
 let createArray = (array) => {
    i = 0;
    while (i < array.length) {
@@ -32,7 +32,7 @@ let createArray = (array) => {
        i++;
    }
 }
-createArray(array)
+createArray(array);
 
 
 // - створити функцію яка  створює параграф з текстом. Текст задати через аргумент
@@ -55,7 +55,7 @@ let createUl = (text) => {
     document.write(`<li>${text}</li>`);
     document.write(`</ul>`);
 }
-createUl('Sunrise')
+createUl('Sunrise');
 
 // - створити функцію яка  створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
@@ -66,7 +66,7 @@ let createUlLi = (text, num) => {
     }
     document.write(`</ul>`);
 }
-createUlLi('Вийшло', 20)
+createUlLi('Вийшло', 20);
 
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
@@ -81,7 +81,7 @@ let createElements = (el) => {
     }
     document.write(`</ul>`);
 }
-createElements (elements)
+createElements (elements);
 
 //
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
@@ -92,4 +92,4 @@ let createObject = (obj) => {
         document.write(`<div>${item.id} - ${item.name} - ${item.age} </div>`)
     }
 }
-createObject(object)
+createObject(object);
