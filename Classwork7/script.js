@@ -99,7 +99,6 @@ class Cinderella {
         this.footsize = footsize;
     }
 }
-
 let Cinderellas = [
     new Cinderella('Anna', 17, 35),
 new Cinderella('Lilli', 16, 34),
